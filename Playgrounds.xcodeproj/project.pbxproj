@@ -40,6 +40,7 @@
 		617832DF19C6A2E4001AB3E4 /* PlaygroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		617832E419C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundsTests.m; sourceTree = "<group>"; };
+		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				617832D619C6A2E4001AB3E4 /* Images.xcassets */,
 				617832D819C6A2E4001AB3E4 /* LaunchScreen.xib */,
 				617832C919C6A2E4001AB3E4 /* Supporting Files */,
+				617832F019C6AB71001AB3E4 /* NSURLSession.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
