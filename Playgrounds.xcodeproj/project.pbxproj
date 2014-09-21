@@ -42,6 +42,7 @@
 		617832E419C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundsTests.m; sourceTree = "<group>"; };
 		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
+		6191453A19CE9CBB009145BB /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings.playground; sourceTree = "<group>"; };
 		61C834AE19CE2F9800F068A3 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +96,7 @@
 				617832F019C6AB71001AB3E4 /* NSURLSession.playground */,
 				610E14C319CC992800ABFBF6 /* Enums.playground */,
 				61C834AE19CE2F9800F068A3 /* Arrays.playground */,
+				6191453A19CE9CBB009145BB /* Strings.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

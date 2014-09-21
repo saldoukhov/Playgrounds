@@ -23,6 +23,10 @@ marr.sort( { s1, s2 in return s1 < s2 } )
 
 let narr = [1, 2, 3, 4]
 
+[].join([[1, 2], [3, 4], [5, 6]])
+
+[100].join([[1, 2], [3, 4], [5, 6]])
+
 let narrFiltered =
 narr.filter( { $0 < 3 } )
 
