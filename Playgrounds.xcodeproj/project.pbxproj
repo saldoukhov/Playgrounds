@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612F24F619CF60280053DAD3 /* LinqKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612F24F119CF5FFA0053DAD3 /* LinqKit.framework */; };
 		617832CC19C6A2E4001AB3E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832CB19C6A2E4001AB3E4 /* main.m */; };
 		617832CF19C6A2E4001AB3E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832CE19C6A2E4001AB3E4 /* AppDelegate.m */; };
 		617832D219C6A2E4001AB3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832D119C6A2E4001AB3E4 /* ViewController.m */; };
@@ -17,6 +18,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		612F24F019CF5FFA0053DAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612F24D219CF5FFA0053DAD3;
+			remoteInfo = LinqKit;
+		};
+		612F24F219CF5FFA0053DAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612F24DD19CF5FFA0053DAD3;
+			remoteInfo = LinqKitTests;
+		};
 		617832E019C6A2E4001AB3E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 617832BE19C6A2E4001AB3E4 /* Project object */;
@@ -28,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		610E14C319CC992800ABFBF6 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; };
+		612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LinqKit.xcodeproj; path = LinqKit/LinqKit.xcodeproj; sourceTree = "<group>"; };
 		617832C619C6A2E4001AB3E4 /* Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617832CA19C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832CB19C6A2E4001AB3E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612F24F619CF60280053DAD3 /* LinqKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		612F24EC19CF5FFA0053DAD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612F24F119CF5FFA0053DAD3 /* LinqKit.framework */,
+				612F24F319CF5FFA0053DAD3 /* LinqKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		617832BD19C6A2E4001AB3E4 = {
 			isa = PBXGroup;
 			children = (
+				612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */,
 				617832C819C6A2E4001AB3E4 /* Playgrounds */,
 				617832E219C6A2E4001AB3E4 /* PlaygroundsTests */,
 				617832C719C6A2E4001AB3E4 /* Products */,
@@ -194,6 +221,12 @@
 			mainGroup = 617832BD19C6A2E4001AB3E4;
 			productRefGroup = 617832C719C6A2E4001AB3E4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 612F24EC19CF5FFA0053DAD3 /* Products */;
+					ProjectRef = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				617832C519C6A2E4001AB3E4 /* Playgrounds */,
@@ -201,6 +234,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		612F24F119CF5FFA0053DAD3 /* LinqKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LinqKit.framework;
+			remoteRef = 612F24F019CF5FFA0053DAD3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		612F24F319CF5FFA0053DAD3 /* LinqKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LinqKitTests.xctest;
+			remoteRef = 612F24F219CF5FFA0053DAD3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		617832C419C6A2E4001AB3E4 /* Resources */ = {
@@ -353,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
