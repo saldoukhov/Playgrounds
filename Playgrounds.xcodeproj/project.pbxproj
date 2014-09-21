@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6107FC2319CAA3E10074D6EF /* Arraays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arraays.playground; sourceTree = "<group>"; };
+		610E14C319CC992800ABFBF6 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; };
 		617832C619C6A2E4001AB3E4 /* Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617832CA19C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832CB19C6A2E4001AB3E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +42,7 @@
 		617832E419C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundsTests.m; sourceTree = "<group>"; };
 		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
+		61C834AE19CE2F9800F068A3 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +93,8 @@
 				617832D819C6A2E4001AB3E4 /* LaunchScreen.xib */,
 				617832C919C6A2E4001AB3E4 /* Supporting Files */,
 				617832F019C6AB71001AB3E4 /* NSURLSession.playground */,
-				6107FC2319CAA3E10074D6EF /* Arraays.playground */,
+				610E14C319CC992800ABFBF6 /* Enums.playground */,
+				61C834AE19CE2F9800F068A3 /* Arrays.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
