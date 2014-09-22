@@ -22,19 +22,9 @@ extension Array {
     }
 }
 
-extension String {
-    func repeat(count: Int) -> String {
-        var str = ""
-        for _ in 0..<count {
-            str += self
-        }
-        return str
-    }
-}
-
 func _printOrg(level: Int, employee: Employee) {
     func nSpaces(count: Int) -> String {
-        return "  ".repeat(count)
+        return String(seq: Array(count: count, repeatedValue: " "))
     }
     switch employee {
     case .Worker(let name):

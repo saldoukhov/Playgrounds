@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-@import LinqKit;
+#import "Playgrounds-Swift.h"
+//@import LinqKit;
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    TestClass *tc = [[TestClass alloc] init];
+    [tc Test];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

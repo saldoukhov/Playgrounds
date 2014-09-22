@@ -33,6 +33,11 @@ narr.filter( { $0 < 3 } )
 let narrMapped =
 narr.map( { String($0) } )
 
+let n = 1
+narr[0...n]
+
+Array(count: 10, repeatedValue: 1)
+
 let zipped = Array(Zip2(["a", "b", "c"], [1, 2]))
 
 let firstNum = narr.first!
@@ -58,4 +63,6 @@ class Numbers : SequenceType {
 }
 
 let nums = Numbers(max: 5)
+
+
 

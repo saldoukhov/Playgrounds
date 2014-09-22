@@ -7,43 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		612F24F619CF60280053DAD3 /* LinqKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612F24F119CF5FFA0053DAD3 /* LinqKit.framework */; };
+		611C32E819CF81AF00F4CA07 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C32E719CF81AF00F4CA07 /* Test.swift */; };
 		617832CC19C6A2E4001AB3E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832CB19C6A2E4001AB3E4 /* main.m */; };
 		617832CF19C6A2E4001AB3E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832CE19C6A2E4001AB3E4 /* AppDelegate.m */; };
 		617832D219C6A2E4001AB3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832D119C6A2E4001AB3E4 /* ViewController.m */; };
 		617832D519C6A2E4001AB3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617832D319C6A2E4001AB3E4 /* Main.storyboard */; };
 		617832D719C6A2E4001AB3E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617832D619C6A2E4001AB3E4 /* Images.xcassets */; };
 		617832DA19C6A2E4001AB3E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 617832D819C6A2E4001AB3E4 /* LaunchScreen.xib */; };
-		617832E619C6A2E4001AB3E4 /* PlaygroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		612F24F019CF5FFA0053DAD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 612F24D219CF5FFA0053DAD3;
-			remoteInfo = LinqKit;
-		};
-		612F24F219CF5FFA0053DAD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 612F24DD19CF5FFA0053DAD3;
-			remoteInfo = LinqKitTests;
-		};
-		617832E019C6A2E4001AB3E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 617832BE19C6A2E4001AB3E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 617832C519C6A2E4001AB3E4;
-			remoteInfo = Playgrounds;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		610E14C319CC992800ABFBF6 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; };
-		612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LinqKit.xcodeproj; path = LinqKit/LinqKit.xcodeproj; sourceTree = "<group>"; };
+		611C32E619CF81AE00F4CA07 /* Playgrounds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playgrounds-Bridging-Header.h"; sourceTree = "<group>"; };
+		611C32E719CF81AF00F4CA07 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		617832C619C6A2E4001AB3E4 /* Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617832CA19C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832CB19C6A2E4001AB3E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,24 +30,14 @@
 		617832D419C6A2E4001AB3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		617832D619C6A2E4001AB3E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		617832D919C6A2E4001AB3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		617832DF19C6A2E4001AB3E4 /* PlaygroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		617832E419C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundsTests.m; sourceTree = "<group>"; };
 		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
 		6191453A19CE9CBB009145BB /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings.playground; sourceTree = "<group>"; };
+		61B62ED019CFE1AE006FC893 /* LazySequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LazySequence.playground; sourceTree = "<group>"; };
 		61C834AE19CE2F9800F068A3 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		617832C319C6A2E4001AB3E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				612F24F619CF60280053DAD3 /* LinqKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		617832DC19C6A2E4001AB3E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,21 +47,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		612F24EC19CF5FFA0053DAD3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				612F24F119CF5FFA0053DAD3 /* LinqKit.framework */,
-				612F24F319CF5FFA0053DAD3 /* LinqKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		617832BD19C6A2E4001AB3E4 = {
 			isa = PBXGroup;
 			children = (
-				612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */,
 				617832C819C6A2E4001AB3E4 /* Playgrounds */,
-				617832E219C6A2E4001AB3E4 /* PlaygroundsTests */,
 				617832C719C6A2E4001AB3E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				617832C619C6A2E4001AB3E4 /* Playgrounds.app */,
-				617832DF19C6A2E4001AB3E4 /* PlaygroundsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +78,9 @@
 				610E14C319CC992800ABFBF6 /* Enums.playground */,
 				61C834AE19CE2F9800F068A3 /* Arrays.playground */,
 				6191453A19CE9CBB009145BB /* Strings.playground */,
+				61B62ED019CFE1AE006FC893 /* LazySequence.playground */,
+				611C32E719CF81AF00F4CA07 /* Test.swift */,
+				611C32E619CF81AE00F4CA07 /* Playgrounds-Bridging-Header.h */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -133,23 +90,6 @@
 			children = (
 				617832CA19C6A2E4001AB3E4 /* Info.plist */,
 				617832CB19C6A2E4001AB3E4 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		617832E219C6A2E4001AB3E4 /* PlaygroundsTests */ = {
-			isa = PBXGroup;
-			children = (
-				617832E519C6A2E4001AB3E4 /* PlaygroundsTests.m */,
-				617832E319C6A2E4001AB3E4 /* Supporting Files */,
-			);
-			path = PlaygroundsTests;
-			sourceTree = "<group>";
-		};
-		617832E319C6A2E4001AB3E4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				617832E419C6A2E4001AB3E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,24 +114,6 @@
 			productReference = 617832C619C6A2E4001AB3E4 /* Playgrounds.app */;
 			productType = "com.apple.product-type.application";
 		};
-		617832DE19C6A2E4001AB3E4 /* PlaygroundsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 617832EC19C6A2E4001AB3E4 /* Build configuration list for PBXNativeTarget "PlaygroundsTests" */;
-			buildPhases = (
-				617832DB19C6A2E4001AB3E4 /* Sources */,
-				617832DC19C6A2E4001AB3E4 /* Frameworks */,
-				617832DD19C6A2E4001AB3E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				617832E119C6A2E4001AB3E4 /* PBXTargetDependency */,
-			);
-			name = PlaygroundsTests;
-			productName = PlaygroundsTests;
-			productReference = 617832DF19C6A2E4001AB3E4 /* PlaygroundsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,10 +125,6 @@
 				TargetAttributes = {
 					617832C519C6A2E4001AB3E4 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					617832DE19C6A2E4001AB3E4 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 617832C519C6A2E4001AB3E4;
 					};
 				};
 			};
@@ -221,36 +139,12 @@
 			mainGroup = 617832BD19C6A2E4001AB3E4;
 			productRefGroup = 617832C719C6A2E4001AB3E4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 612F24EC19CF5FFA0053DAD3 /* Products */;
-					ProjectRef = 612F24EB19CF5FFA0053DAD3 /* LinqKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				617832C519C6A2E4001AB3E4 /* Playgrounds */,
-				617832DE19C6A2E4001AB3E4 /* PlaygroundsTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		612F24F119CF5FFA0053DAD3 /* LinqKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LinqKit.framework;
-			remoteRef = 612F24F019CF5FFA0053DAD3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		612F24F319CF5FFA0053DAD3 /* LinqKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = LinqKitTests.xctest;
-			remoteRef = 612F24F219CF5FFA0053DAD3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		617832C419C6A2E4001AB3E4 /* Resources */ = {
@@ -263,13 +157,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617832DD19C6A2E4001AB3E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,28 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				617832D219C6A2E4001AB3E4 /* ViewController.m in Sources */,
+				611C32E819CF81AF00F4CA07 /* Test.swift in Sources */,
 				617832CF19C6A2E4001AB3E4 /* AppDelegate.m in Sources */,
 				617832CC19C6A2E4001AB3E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617832DB19C6A2E4001AB3E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				617832E619C6A2E4001AB3E4 /* PlaygroundsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		617832E119C6A2E4001AB3E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 617832C519C6A2E4001AB3E4 /* Playgrounds */;
-			targetProxy = 617832E019C6A2E4001AB3E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		617832D319C6A2E4001AB3E4 /* Main.storyboard */ = {
@@ -403,10 +275,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playgrounds/Playgrounds-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -414,44 +289,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		617832ED19C6A2E4001AB3E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PlaygroundsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playgrounds.app/Playgrounds";
-			};
-			name = Debug;
-		};
-		617832EE19C6A2E4001AB3E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PlaygroundsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playgrounds.app/Playgrounds";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playgrounds/Playgrounds-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -472,15 +315,6 @@
 			buildConfigurations = (
 				617832EA19C6A2E4001AB3E4 /* Debug */,
 				617832EB19C6A2E4001AB3E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		617832EC19C6A2E4001AB3E4 /* Build configuration list for PBXNativeTarget "PlaygroundsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				617832ED19C6A2E4001AB3E4 /* Debug */,
-				617832EE19C6A2E4001AB3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
