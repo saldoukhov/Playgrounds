@@ -32,8 +32,8 @@
 		617832D919C6A2E4001AB3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
 		6191453A19CE9CBB009145BB /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings.playground; sourceTree = "<group>"; };
-		61B62ED019CFE1AE006FC893 /* LazySequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LazySequence.playground; sourceTree = "<group>"; };
 		61C834AE19CE2F9800F068A3 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
+		61ED97F019D0C34B005B1445 /* SequenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SequenceType.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				610E14C319CC992800ABFBF6 /* Enums.playground */,
 				61C834AE19CE2F9800F068A3 /* Arrays.playground */,
 				6191453A19CE9CBB009145BB /* Strings.playground */,
-				61B62ED019CFE1AE006FC893 /* LazySequence.playground */,
+				61ED97F019D0C34B005B1445 /* SequenceType.playground */,
 				611C32E719CF81AF00F4CA07 /* Test.swift */,
 				611C32E619CF81AE00F4CA07 /* Playgrounds-Bridging-Header.h */,
 			);
