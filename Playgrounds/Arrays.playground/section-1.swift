@@ -64,5 +64,3 @@ class Numbers : SequenceType {
 
 let nums = Numbers(max: 5)
 
-
-

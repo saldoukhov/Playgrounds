@@ -20,27 +20,30 @@ func sequenceToDictionary<S: SequenceType, Key : Hashable>(source: S, pair: S.Ge
     return dictionary
 }
 
-//    public func groupBy<KeyType : Hashable>(transform: S.Generator.Element -> KeyType) -> Bite<Dictionary<KeyType, Array<T.Generator.Element>>> {
-//
-//        var dictionary = Dictionary<KeyType, Array<S.Generator.Element>>()
-//        for element in self {
-//            let key = transform(element)
-//            let foundArray = dictionary[key]
-//            var array = foundArray ?? Array<T.Generator.Element>()
-//            array += [element]
-//            dictionary[key] = array
-//        }
-//        return LazySequence<Dictionary<KeyType, Array<T.Generator.Element>>>(dictionary)
-//    }
+func sequenceToGroups<S: SequenceType, Key : Hashable>(source: S, key: S.Generator.Element -> Key) -> Dictionary<Key, [S.Generator.Element]> {
+    var dictionary = Dictionary<Key, [S.Generator.Element]>()
+    for element in source {
+        let key = key(element)
+        let foundArray = dictionary[key]
+        var array = foundArray ?? Array<S.Generator.Element>()
+        array.append(element)
+        dictionary[key] = array
+    }
+    return dictionary
+}
 
 extension Array {
     
     func dictionary<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, Element> {
         return sequenceToDictionary(self, key);
     }
+
+    func dictionary<Key : Hashable>(pair: Element -> (Key, Element)) -> Dictionary<Key, Element> {
+        return sequenceToDictionary(self, pair);
+    }
     
-    func dictionary<Key : Hashable>(key: Element -> (Key, Element)) -> Dictionary<Key, Element> {
-        return sequenceToDictionary(self, key);
+    func group<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, [Element]> {
+        return sequenceToGroups(self, key);
     }
 }
 
@@ -50,3 +53,17 @@ let dict1 =
 
 let dict2 =
     ["hElLo", "wOrld"].dictionary({ ( $0.uppercaseString, $0.lowercaseString ) })
+
+let dict3 =
+    [10, 11, 12, 20, 21, 30 ].group( { $0 / 10 } )
+
+let naturals = SequenceOf {
+    _ -> GeneratorOf<Int> in
+    var i = 0
+    return GeneratorOf {
+        ++i
+    }
+}
+
+var n = naturals.generate()
+n.next()
