@@ -32,6 +32,8 @@ func sequenceToGroups<S: SequenceType, Key : Hashable>(source: S, key: S.Generat
     return dictionary
 }
 
+
+
 extension Array {
     
     func dictionary<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, Element> {
