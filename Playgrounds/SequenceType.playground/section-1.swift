@@ -32,20 +32,38 @@ func sequenceToGroups<S: SequenceType, Key : Hashable>(source: S, key: S.Generat
     return dictionary
 }
 
-
+func max<S: SequenceType, V: Comparable>(source: S, selector: S.Generator.Element -> V) -> V? {
+    var maxValue: V? = nil
+    for element in source {
+        let current = selector(element)
+        if maxValue == nil {
+            maxValue = current
+        }
+        else {
+            if current > maxValue {
+                maxValue = current
+            }
+        }
+    }
+    return maxValue
+}
 
 extension Array {
     
     func dictionary<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, Element> {
-        return sequenceToDictionary(self, key);
+        return sequenceToDictionary(self, key)
     }
 
     func dictionary<Key : Hashable>(pair: Element -> (Key, Element)) -> Dictionary<Key, Element> {
-        return sequenceToDictionary(self, pair);
+        return sequenceToDictionary(self, pair)
     }
     
     func group<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, [Element]> {
-        return sequenceToGroups(self, key);
+        return sequenceToGroups(self, key)
+    }
+    
+    func max<V: Comparable>(selector: Element -> V) -> V? {
+        return max(selector)
     }
 }
 
@@ -58,6 +76,8 @@ let dict2 =
 
 let dict3 =
     [10, 11, 12, 20, 21, 30 ].group( { $0 / 10 } )
+
+//let maxVal = [3, 2, 5, 1].max( { $0 } )
 
 let naturals = SequenceOf {
     _ -> GeneratorOf<Int> in

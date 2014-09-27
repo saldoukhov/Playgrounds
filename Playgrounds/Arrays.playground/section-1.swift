@@ -36,6 +36,13 @@ narr.map( { String($0) } )
 let n = 1
 narr[0...n]
 
+let n2 = narr.startIndex.advancedBy(2)
+narr.startIndex
+narr.endIndex
+narr.count
+let n3 = advance(n2, 1)
+narr[n2...n2+1] == [3, 4]
+
 Array(count: 10, repeatedValue: 1)
 
 let zipped = Array(Zip2(["a", "b", "c"], [1, 2]))
@@ -45,6 +52,13 @@ let firstNum = narr.first!
 let sumBelow4 = narr
     .filter( { $0 < 4 } )
     .reduce(0, +)
+
+Array("abcd")
+[Character]("abcd")
+let chars1 =
+    Array(map("abcd", { $0 }))
+let chars2 =
+    Array(lazy("abcd").map({ $0 }))
 
 class Numbers : SequenceType {
     let max: Int = 10

@@ -15,11 +15,14 @@ let str = "abcdefg"
 str[3]
 let s0 = str.startIndex
 let s2 = advance(s0, 2)
+let str2 = str.substringFromIndex(s2)
+str2.hasPrefix("cd")
 let dist = distance(s0, s2)
 str[s2]
 str.hasPrefix("abc")
 str.hasSuffix("def")
 let r = str.rangeOfString("cd")!
+let split = "abc def".componentsSeparatedByString(" ")
 
 extension String {
     
@@ -52,6 +55,10 @@ extension String {
         result.replaceCharactersInRange(NSRange(range), withString: withString)
         return result
     }
+    
+    func trim() -> String {
+        return (self as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    }
 }
 
 str.substringToIndex(3)
@@ -59,3 +66,4 @@ str.substringFromIndex(3)
 str.substringWithRange(2...4)
 str[3]
 str[2...4]
+" abc ".trim()
