@@ -35,6 +35,9 @@ narr.map( { String($0) } )
 
 let n = 1
 narr[0...n]
+narr[narr.startIndex..<narr.endIndex]
+narr[0..<advance(narr.startIndex, narr.count)]
+Slice(narr)
 
 let n2 = narr.startIndex.advancedBy(2)
 narr.startIndex
