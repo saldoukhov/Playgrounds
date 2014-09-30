@@ -48,6 +48,37 @@ func max<S: SequenceType, V: Comparable>(source: S, selector: S.Generator.Elemen
     return maxValue
 }
 
+func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) -> SequenceOf<V>  {
+    let seq = SequenceOf {
+        _ -> GeneratorOf<V> in
+        var gen = source.generate()
+        return GeneratorOf {
+            let v = gen.next()
+            println(v)
+            return v == nil ? nil : selector(v!)
+        }
+    }
+    return seq
+}
+
+func scan<S: SequenceType, State>(source: S, initialState: State, selector: (State, S.Generator.Element) -> State) -> SequenceOf<State>  {
+    let seq = SequenceOf {
+        _ -> GeneratorOf<State> in
+        var gen = source.generate()
+        var state = initialState
+        return GeneratorOf {
+            let v = gen.next()
+            if v == nil {
+                return nil
+            }
+            state = selector(state, v!)
+            return state
+        }
+    }
+    return seq
+}
+
+
 extension Array {
     
     func dictionary<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, Element> {

@@ -2,14 +2,17 @@
 
 import UIKit
 
-var dictWithNulls = Dictionary<String, [Int]?>()
+var dictWithNulls = Dictionary<String, Int?>()
 
-dictWithNulls = ["1": [1, 2], "2": nil, "3": [3, 4]]
+dictWithNulls = ["1": 1, "2": nil]
 
 dictWithNulls["2"]
-dictWithNulls["4"]
-dictWithNulls.indexForKey("2") == .None
-dictWithNulls.indexForKey("4") == .None
+dictWithNulls["3"]
+dictWithNulls["1"] = nil
+dictWithNulls.indexForKey("1") == nil  // Objective C legacy lives
+dictWithNulls.indexForKey("2") == nil
+let f =
+    filter(dictWithNulls, { $0.1 == nil })
 
 
 let strDict = ["1": "a", "2": "b"]
