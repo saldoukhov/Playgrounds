@@ -8,9 +8,52 @@
 
 import Foundation
 
+func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) -> SequenceOf<V>  {
+    let seq = SequenceOf {
+        _ -> GeneratorOf<V> in
+        var gen = source.generate()
+        return GeneratorOf {
+            let v = gen.next()
+            return v == nil ? nil : selector(v!)
+        }
+    }
+    return seq
+}
+
+//func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) -> LazySequence<SequenceOf<V>>  {
+//    let seq = SequenceOf {
+//        _ -> GeneratorOf<V> in
+//        var gen = source.generate()
+//        return GeneratorOf {
+//            let v = gen.next()
+//            return v == nil ? nil : selector(v!)
+//        }
+//    }
+//    return lazy(seq)
+//}
+
+struct TransientView<S: SequenceType> : SequenceType {
+
+    private let seq: S
+
+    init(_ seq: S) {
+        self.seq = seq
+    }
+    
+    func generate()
+        -> GeneratorOf<S.Generator.Element> {
+            var g = seq.generate()
+            return GeneratorOf {
+                println("next")
+                return g.next()
+            }
+    }
+}
+
 public class TestClass: NSObject {
     
     func Test() {
+        let seq = lazy(map(TransientView([1, 2, 3]), { $0 * 2 }))
         println("test")
     }
     

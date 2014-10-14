@@ -21,6 +21,7 @@
 		611C32E619CF81AE00F4CA07 /* Playgrounds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playgrounds-Bridging-Header.h"; sourceTree = "<group>"; };
 		611C32E719CF81AF00F4CA07 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		6177287119D677C10073FC79 /* StringsKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringsKit.playground; sourceTree = "<group>"; };
+		617777F919E477D2004B6AA2 /* DateTime.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DateTime.playground; sourceTree = "<group>"; };
 		617832C619C6A2E4001AB3E4 /* Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617832CA19C6A2E4001AB3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617832CB19C6A2E4001AB3E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				6177287119D677C10073FC79 /* StringsKit.playground */,
 				61ED97F019D0C34B005B1445 /* SequenceType.playground */,
 				61992D9A19D7D60B00A42CB1 /* Dictionaries.playground */,
+				617777F919E477D2004B6AA2 /* DateTime.playground */,
 				611C32E719CF81AF00F4CA07 /* Test.swift */,
 				611C32E619CF81AE00F4CA07 /* Playgrounds-Bridging-Header.h */,
 			);

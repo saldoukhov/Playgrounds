@@ -54,7 +54,6 @@ func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) ->
         var gen = source.generate()
         return GeneratorOf {
             let v = gen.next()
-            println(v)
             return v == nil ? nil : selector(v!)
         }
     }
