@@ -8,9 +8,9 @@ dateFormatter.dateFormat = "MM/dd/yyyy"
 let date = dateFormatter.dateFromString(dateStr)
 
 let now = NSDate()
-let units = NSCalendarUnit.DayCalendarUnit | NSCalendarUnit.MonthCalendarUnit | NSCalendarUnit.YearCalendarUnit
+let hourMinuteComponents: NSCalendarUnit = [.Day, .Month, .Year, .Hour]
 let cal = NSCalendar.currentCalendar()
-let components = cal.components(units, fromDate: now)
+let components = cal.components(hourMinuteComponents, fromDate: now)
 let d = components.day
 let m = components.month
 let y = components.year
