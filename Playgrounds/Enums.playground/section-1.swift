@@ -15,7 +15,7 @@ let mitch = Employee.Manager("Mitch", [
     ])
 
 extension Array {
-    func each(fn: (T) -> ()) {
+    func each(fn: (Element) -> ()) {
         for i in self {
             fn(i)
         }
@@ -24,19 +24,19 @@ extension Array {
 
 func _printOrg(level: Int, employee: Employee) {
     func nSpaces(count: Int) -> String {
-        return String(seq: Array(count: count, repeatedValue: " "))
+        return String(Array(count: count, repeatedValue: " "))
     }
     switch employee {
     case .Worker(let name):
-        println("\(nSpaces(level))\(name)")
+        print("\(nSpaces(level))\(name)")
     case .Manager(let name, let workers):
-        println("\(nSpaces(level))\(name)")
-        workers.each( { _printOrg(level + 1, $0)} )
+        print("\(nSpaces(level))\(name)")
+        workers.each( { _printOrg(level + 1, employee: $0)} )
     }
 }
 
 func printOrg(top: Employee) {
-    _printOrg(0, top)
+    _printOrg(0, employee: top)
 }
 
 printOrg(mitch)
