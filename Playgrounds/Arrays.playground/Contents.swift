@@ -59,9 +59,9 @@ let sumBelow4 = narr
 Array("abcd")
 [Character]("abcd")
 let chars1 =
-    Array(map("abcd", { $0 }))
+Array(map("abcd", { $0 }))
 let chars2 =
-    Array(lazy("abcd").map({ $0 }))
+Array(lazy("abcd").map({ $0 }))
 
 class Numbers : SequenceType {
     let max: Int = 10
@@ -80,4 +80,3 @@ class Numbers : SequenceType {
 }
 
 let nums = Numbers(max: 5)
-
