@@ -76,10 +76,10 @@ class Numbers : SequenceType {
     
     func generate() -> AnyGenerator<Int> {
         var i = 0
-        return anyGenerator() {
+        return anyGenerator( {
             if i >= self.max { return .None }
             return .Some(i++)
-        }
+        })
     }
 }
 

@@ -14,7 +14,7 @@ func sequenceToDictionary<S: SequenceType, Key : Hashable>(source: S, key: S.Gen
 func sequenceToDictionary<S: SequenceType, Key : Hashable>(source: S, pair: S.Generator.Element -> (Key, S.Generator.Element)) -> Dictionary<Key, S.Generator.Element> {
     var dictionary = Dictionary<Key, S.Generator.Element>()
     for element in source {
-        let (key, value) = pair(element)
+        let (key, _) = pair(element)
         dictionary[key] = element
     }
     return dictionary
@@ -48,31 +48,31 @@ func max<S: SequenceType, V: Comparable>(source: S, selector: S.Generator.Elemen
     return maxValue
 }
 
-func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) -> SequenceOf<V>  {
-    let seq = SequenceOf {
-        _ -> GeneratorOf<V> in
+func myMap<S: SequenceType, V>(source: S, selector: S.Generator.Element -> V) -> AnySequence<V>  {
+    let seq = AnySequence({
+        _ -> AnyGenerator<V> in
         var gen = source.generate()
-        return GeneratorOf {
+        return anyGenerator({
             let v = gen.next()
             return v == nil ? nil : selector(v!)
-        }
-    }
+        })
+    })
     return seq
 }
 
-func scan<S: SequenceType, State>(source: S, initialState: State, selector: (State, S.Generator.Element) -> State) -> SequenceOf<State>  {
-    let seq = SequenceOf {
-        _ -> GeneratorOf<State> in
+func scan<S: SequenceType, State>(source: S, initialState: State, selector: (State, S.Generator.Element) -> State) -> AnySequence<State>  {
+    let seq = AnySequence {
+        _ -> AnyGenerator<State> in
         var gen = source.generate()
         var state = initialState
-        return GeneratorOf {
+        return anyGenerator({
             let v = gen.next()
             if v == nil {
                 return nil
             }
             state = selector(state, v!)
             return state
-        }
+        })
     }
     return seq
 }
@@ -81,15 +81,15 @@ func scan<S: SequenceType, State>(source: S, initialState: State, selector: (Sta
 extension Array {
     
     func dictionary<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, Element> {
-        return sequenceToDictionary(self, key)
+        return sequenceToDictionary(self, key: key)
     }
 
     func dictionary<Key : Hashable>(pair: Element -> (Key, Element)) -> Dictionary<Key, Element> {
-        return sequenceToDictionary(self, pair)
+        return sequenceToDictionary(self, pair: pair)
     }
     
     func group<Key : Hashable>(key: Element -> Key) -> Dictionary<Key, [Element]> {
-        return sequenceToGroups(self, key)
+        return sequenceToGroups(self, key: key)
     }
     
     func max<V: Comparable>(selector: Element -> V) -> V? {
@@ -109,12 +109,10 @@ let dict3 =
 
 //let maxVal = [3, 2, 5, 1].max( { $0 } )
 
-let naturals = SequenceOf {
-    _ -> GeneratorOf<Int> in
+let naturals = AnySequence {
+    _ -> AnyGenerator<Int> in
     var i = 0
-    return GeneratorOf {
-        ++i
-    }
+    return anyGenerator({ ++i })
 }
 
 var n = naturals.generate()
