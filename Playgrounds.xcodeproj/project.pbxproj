@@ -35,8 +35,8 @@
 		617832F019C6AB71001AB3E4 /* NSURLSession.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NSURLSession.playground; sourceTree = "<group>"; };
 		6191453A19CE9CBB009145BB /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings.playground; sourceTree = "<group>"; };
 		61992D9A19D7D60B00A42CB1 /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionaries.playground; sourceTree = "<group>"; };
-		61C834AE19CE2F9800F068A3 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
 		61ED97F019D0C34B005B1445 /* SequenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SequenceType.playground; sourceTree = "<group>"; };
+		A5F260391BD1CA3200E7AB86 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 				617832D619C6A2E4001AB3E4 /* Images.xcassets */,
 				617832D819C6A2E4001AB3E4 /* LaunchScreen.xib */,
 				617832C919C6A2E4001AB3E4 /* Supporting Files */,
+				A5F260391BD1CA3200E7AB86 /* Arrays.playground */,
 				617832F019C6AB71001AB3E4 /* NSURLSession.playground */,
 				610E14C319CC992800ABFBF6 /* Enums.playground */,
-				61C834AE19CE2F9800F068A3 /* Arrays.playground */,
 				6191453A19CE9CBB009145BB /* Strings.playground */,
 				6177287119D677C10073FC79 /* StringsKit.playground */,
 				61ED97F019D0C34B005B1445 /* SequenceType.playground */,
@@ -126,6 +126,8 @@
 		617832BE19C6A2E4001AB3E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Sergey Aldoukhov";
 				TargetAttributes = {
